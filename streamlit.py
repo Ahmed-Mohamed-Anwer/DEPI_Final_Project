@@ -12,7 +12,7 @@ st.image('https://github.com/Ahmed-Mohamed-Anwer/DEPI_Final_Project/blob/main/Sc
 
 
 # Download the CSV file
-url = 'https://github.com/Ahmed-Mohamed-Anwer/DEPI_Final_Project/blob/main/price_predictions.csv'
+url = 'https://raw.githubusercontent.com/Ahmed-Mohamed-Anwer/DEPI_Final_Project/main/price_predictions.csv'
 response = requests.get(url)
 open('price_predictions.csv', 'wb').write(response.content)
 
@@ -20,7 +20,7 @@ open('price_predictions.csv', 'wb').write(response.content)
 df = pd.read_csv('price_predictions.csv')
 
 # Download the SAV file
-url2 = 'https://github.com/Ahmed-Mohamed-Anwer/DEPI_Final_Project/raw/refs/heads/main/predicted_price.sav'
+url2 = 'https://raw.githubusercontent.com/Ahmed-Mohamed-Anwer/DEPI_Final_Project/main/predicted_price.sav'
 response1 = requests.get(url2)
 open('predicted_price.sav', 'wb').write(response1.content) 
 
