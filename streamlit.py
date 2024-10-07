@@ -111,4 +111,5 @@ features = pd.DataFrame({
 
 button = st.button("predict price")
 if button :
-    st.write(df['predicted_list_price'].sample().iloc[0])
+    predicted = Model.predict(features)
+    st.write('price' + str(predicted))
